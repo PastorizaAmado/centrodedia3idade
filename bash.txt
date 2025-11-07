@@ -146,5 +146,11 @@ $ git commit -m "Prueba para el Proyecto"
  create mode 100644 SQLQuery5_tarea2_transacciones.sql
  create mode 100644 SQLQuery6_tarea2_imagenes.sql
  create mode 100644 bash.txt
+ 
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
 
 
