@@ -116,4 +116,35 @@ Untracked files:
         bash.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git add .
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   SQLQuery1_centrodedia.sql
+        new file:   SQLQuery2_tarea2_cadenadepropiedad.sql
+        new file:   SQLQuery3_tarea2_create_proc_backup.sql
+        new file:   SQLQuery4_tarea2_cursores.sql
+        new file:   SQLQuery5_tarea2_transacciones.sql
+        new file:   SQLQuery6_tarea2_imagenes.sql
+        new file:   bash.txt
+		
+		Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git commit -m "Prueba para el Proyecto"
+[master (root-commit) 0178e61] Prueba para el Proyecto
+ 7 files changed, 1084 insertions(+)
+ create mode 100644 SQLQuery1_centrodedia.sql
+ create mode 100644 SQLQuery2_tarea2_cadenadepropiedad.sql
+ create mode 100644 SQLQuery3_tarea2_create_proc_backup.sql
+ create mode 100644 SQLQuery4_tarea2_cursores.sql
+ create mode 100644 SQLQuery5_tarea2_transacciones.sql
+ create mode 100644 SQLQuery6_tarea2_imagenes.sql
+ create mode 100644 bash.txt
+
 
