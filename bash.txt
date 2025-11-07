@@ -1,0 +1,119 @@
+Dpastoriza@Windows11BBDD MINGW64 ~
+$ git --version
+git version 2.51.2.windows.1
+
+Dpastoriza@Windows11BBDD MINGW64 ~
+$ cd /c
+
+Dpastoriza@Windows11BBDD MINGW64 /c
+$ cd /git
+bash: cd: /git: No such file or directory
+
+Dpastoriza@Windows11BBDD MINGW64 /c
+$ cd /c/git
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git
+$ dir
+Acceso.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git
+$ ls
+Acceso.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git
+$ git init
+Initialized empty Git repository in C:/Git/.git/
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ ls -liah
+total 13K
+3377699720532644 drwxr-xr-x 1 Dpastoriza 197121   0 Nov  7 19:58 ./
+1407374883553285 drwxr-xr-x 1 Dpastoriza 197121   0 Nov  7 13:17 ../
+1125899906874302 drwxr-xr-x 1 Dpastoriza 197121   0 Nov  7 19:58 .git/
+2251799813690025 -rw-r--r-- 1 Dpastoriza 197121 108 Nov  7 13:17 Acceso.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --global user.name pastorizaamado
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --global user.email dpap4st0r@gmail.com
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config user.name
+pastorizaamado
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=pastorizaamado
+user.email=dpap4st0r@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=pastorizaamado
+user.email=dpap4st0r@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --global core.editor "notepad"
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --global --edit
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ start notepad++
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SQLQuery1_centrodedia.sql
+        SQLQuery2_tarea2_cadenadepropiedad.sql
+        SQLQuery3_tarea2_create_proc_backup.sql
+        SQLQuery4_tarea2_cursores.sql
+        SQLQuery5_tarea2_transacciones.sql
+        SQLQuery6_tarea2_imagenes.sql
+        bash.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
