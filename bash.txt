@@ -152,5 +152,29 @@ $ git status
 On branch master
 nothing to commit, working tree clean
 
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git remote add origin https://github.com/PastorizaAmado/centrodedia3idade.git
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git remote -v
+origin  https://github.com/PastorizaAmado/centrodedia3idade.git (fetch)
+origin  https://github.com/PastorizaAmado/centrodedia3idade.git (push)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (15/15), 7.63 KiB | 1.53 MiB/s, done.
+Total 15 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/PastorizaAmado/centrodedia3idade.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+
+
 
 
