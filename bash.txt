@@ -189,9 +189,62 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
+
 Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
-$
+$ git add bash.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   bash.txt
 
 
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git commit -m "Actualizo bash"
+[master b4b8c07] Actualizo bash
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 530 bytes | 530.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/PastorizaAmado/centrodedia3idade.git
+   ead7a04..b4b8c07  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+
+
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git branch
+* master
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git branch NuevaRama
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git show-branch
+! [NuevaRama] Actualizo bash
+ * [master] Actualizo bash
+--
++* [NuevaRama] Actualizo bash
 
 
