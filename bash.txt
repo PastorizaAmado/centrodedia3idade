@@ -1,1 +1,864 @@
-Esto es una prueba de gitclone
+Dpastoriza@Windows11BBDD MINGW64 ~
+$ git --version
+git version 2.51.2.windows.1
+
+Dpastoriza@Windows11BBDD MINGW64 ~
+$ cd /c
+
+Dpastoriza@Windows11BBDD MINGW64 /c
+$ cd /git
+bash: cd: /git: No such file or directory
+
+Dpastoriza@Windows11BBDD MINGW64 /c
+$ cd /c/git
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git
+$ dir
+Acceso.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git
+$ ls
+Acceso.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git
+$ git init
+Initialized empty Git repository in C:/Git/.git/
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ ls -liah
+total 13K
+3377699720532644 drwxr-xr-x 1 Dpastoriza 197121   0 Nov  7 19:58 ./
+1407374883553285 drwxr-xr-x 1 Dpastoriza 197121   0 Nov  7 13:17 ../
+1125899906874302 drwxr-xr-x 1 Dpastoriza 197121   0 Nov  7 19:58 .git/
+2251799813690025 -rw-r--r-- 1 Dpastoriza 197121 108 Nov  7 13:17 Acceso.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --global user.name pastorizaamado
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --global user.email dpap4st0r@gmail.com
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config user.name
+pastorizaamado
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=pastorizaamado
+user.email=dpap4st0r@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=pastorizaamado
+user.email=dpap4st0r@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --global core.editor "notepad"
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git config --global --edit
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ start notepad++
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SQLQuery1_centrodedia.sql
+        SQLQuery2_tarea2_cadenadepropiedad.sql
+        SQLQuery3_tarea2_create_proc_backup.sql
+        SQLQuery4_tarea2_cursores.sql
+        SQLQuery5_tarea2_transacciones.sql
+        SQLQuery6_tarea2_imagenes.sql
+        bash.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git add .
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   SQLQuery1_centrodedia.sql
+        new file:   SQLQuery2_tarea2_cadenadepropiedad.sql
+        new file:   SQLQuery3_tarea2_create_proc_backup.sql
+        new file:   SQLQuery4_tarea2_cursores.sql
+        new file:   SQLQuery5_tarea2_transacciones.sql
+        new file:   SQLQuery6_tarea2_imagenes.sql
+        new file:   bash.txt
+		
+		Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git commit -m "Prueba para el Proyecto"
+[master (root-commit) 0178e61] Prueba para el Proyecto
+ 7 files changed, 1084 insertions(+)
+ create mode 100644 SQLQuery1_centrodedia.sql
+ create mode 100644 SQLQuery2_tarea2_cadenadepropiedad.sql
+ create mode 100644 SQLQuery3_tarea2_create_proc_backup.sql
+ create mode 100644 SQLQuery4_tarea2_cursores.sql
+ create mode 100644 SQLQuery5_tarea2_transacciones.sql
+ create mode 100644 SQLQuery6_tarea2_imagenes.sql
+ create mode 100644 bash.txt
+ 
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git remote add origin https://github.com/PastorizaAmado/centrodedia3idade.git
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git remote -v
+origin  https://github.com/PastorizaAmado/centrodedia3idade.git (fetch)
+origin  https://github.com/PastorizaAmado/centrodedia3idade.git (push)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (15/15), 7.63 KiB | 1.53 MiB/s, done.
+Total 15 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/PastorizaAmado/centrodedia3idade.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ nano bash.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   bash.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git add bash.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   bash.txt
+
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git commit -m "Actualizo bash"
+[master b4b8c07] Actualizo bash
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 530 bytes | 530.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/PastorizaAmado/centrodedia3idade.git
+   ead7a04..b4b8c07  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+
+
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git branch
+* master
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git branch NuevaRama
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git show-branch
+! [NuevaRama] Actualizo bash
+ * [master] Actualizo bash
+--
++* [NuevaRama] Actualizo bash
+
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (master)
+$ git checkout 'NuevaRama'
+M       bash.txt
+Switched to branch 'NuevaRama'
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (NuevaRama)
+$ git status
+On branch NuevaRama
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   bash.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (NuevaRama)
+$ git add .
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (NuevaRama)
+$ git status
+On branch NuevaRama
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   bash.txt
+
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (NuevaRama)
+$ git commit -m "Rama commit 1"
+[NuevaRama fc099c6] Rama commit 1
+ 1 file changed, 54 insertions(+), 1 deletion(-)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (NuevaRama)
+$ git status
+On branch NuevaRama
+nothing to commit, working tree clean
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (NuevaRama)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (NuevaRama)
+$ git checkout 'Master'
+Switched to branch 'Master'
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git status
+On branch Master
+nothing to commit, working tree clean
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git merge NuevaRama
+Updating b4b8c07..c916058
+Fast-forward
+ bash.txt | 197 ---------------------------------------------------------------
+ 1 file changed, 197 deletions(-)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git reflog
+c916058 (HEAD -> Master, NuevaRama) HEAD@{0}: merge NuevaRama: Fast-forward
+b4b8c07 (origin/master) HEAD@{1}: checkout: moving from NuevaRama to Master
+c916058 (HEAD -> Master, NuevaRama) HEAD@{2}: commit: Rama commit 1
+fc099c6 HEAD@{3}: commit: Rama commit 1
+b4b8c07 (origin/master) HEAD@{4}: checkout: moving from master to NuevaRama
+b4b8c07 (origin/master) HEAD@{5}: commit: Actualizo bash
+ead7a04 HEAD@{6}: commit: Actualizo bash
+580b533 HEAD@{7}: commit: Prueba para el Proyecto
+6fd619b HEAD@{8}: commit: Prueba para el Proyecto
+0178e61 HEAD@{9}: commit (initial): Prueba para el Proyecto
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git remote -v
+origin  https://github.com/PastorizaAmado/centrodedia3idade.git (fetch)
+origin  https://github.com/PastorizaAmado/centrodedia3idade.git (push)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git remote add origin https://github.com/PastorizaAmado/centrodedia3idade.git
+error: remote origin already exists.
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git push -u origin NuevaRama
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 894 bytes | 894.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'NuevaRama' on GitHub by visiting:
+remote:      https://github.com/PastorizaAmado/centrodedia3idade/pull/new/NuevaRama
+remote:
+To https://github.com/PastorizaAmado/centrodedia3idade.git
+ * [new branch]      NuevaRama -> NuevaRama
+branch 'NuevaRama' set up to track 'origin/NuevaRama'.
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git branch -d NuevaRama
+Deleted branch NuevaRama (was c916058).
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git branch
+* Master
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ start notepad bash.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git diff
+diff --git a/bash.txt b/bash.txt
+index e69de29..f7e4740 100644
+--- a/bash.txt
++++ b/bash.txt
+@@ -0,0 +1 @@
++Esto es una prueba de gitclone
+\ No newline at end of file
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ start notepad .gitignore
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git add .
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git status
+On branch Master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Prueba.txt
+        modified:   bash.txt
+
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ git commit -m "Commit el .gitignore"
+[Master 4401bbe] Commit el .gitignore
+ 3 files changed, 3 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Prueba.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+
+
+Dpastoriza@Windows11BBDD MINGW64 /c/git (Master)
+$ cd ..
+
+Dpastoriza@Windows11BBDD MINGW64 /c
+$ git init revres
+Initialized empty Git repository in C:/revres/.git/
+
+Dpastoriza@Windows11BBDD MINGW64 /c
+$ cd revres/
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ gitstatus
+bash: gitstatus: command not found
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ nano texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        texto1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git add .
+warning: in the working copy of 'texto1', LF will be replaced by CRLF the next time Git touches it
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git commit -m 'texto1'
+[master (root-commit) fd8ca8b] texto1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git log
+commit fd8ca8b297ec260c510ed224af5e6b037e4973b8 (HEAD -> master)
+Author: pastorizaamado <dpap4st0r@gmail.com>
+Date:   Sun Nov 16 16:28:06 2025 +0100
+
+    texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ nano texto2
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        texto2
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git commit -m 'texto2'
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        texto2
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git add .
+warning: in the working copy of 'texto2', LF will be replaced by CRLF the next time Git touches it
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git commit -m 'texto2'
+[master 0fb0619] texto2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 texto2
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git log
+commit 0fb06193bba217a2d88cd5c4e824b5597e4cad59 (HEAD -> master)
+Author: pastorizaamado <dpap4st0r@gmail.com>
+Date:   Sun Nov 16 16:30:09 2025 +0100
+
+    texto2
+
+commit fd8ca8b297ec260c510ed224af5e6b037e4973b8
+Author: pastorizaamado <dpap4st0r@gmail.com>
+Date:   Sun Nov 16 16:28:06 2025 +0100
+
+    texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ nano texto3
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        texto3
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git add .
+warning: in the working copy of 'texto3', LF will be replaced by CRLF the next time Git touches it
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git commit -m 'texto3'
+[master 54ff8b7] texto3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 texto3
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git log
+commit 54ff8b70903d27f587d3327f63336b3d2b0a1021 (HEAD -> master)
+Author: pastorizaamado <dpap4st0r@gmail.com>
+Date:   Sun Nov 16 16:32:27 2025 +0100
+
+    texto3
+
+commit 0fb06193bba217a2d88cd5c4e824b5597e4cad59
+Author: pastorizaamado <dpap4st0r@gmail.com>
+Date:   Sun Nov 16 16:30:09 2025 +0100
+
+    texto2
+
+commit fd8ca8b297ec260c510ed224af5e6b037e4973b8
+Author: pastorizaamado <dpap4st0r@gmail.com>
+Date:   Sun Nov 16 16:28:06 2025 +0100
+
+    texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git reset --hard
+HEAD is now at 54ff8b7 texto3
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git log --oneline
+54ff8b7 (HEAD -> master) texto3
+0fb0619 texto2
+fd8ca8b texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git reset --hard fd8ca8b
+HEAD is now at fd8ca8b texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git log --oneline
+fd8ca8b (HEAD -> master) texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git reflog
+fd8ca8b (HEAD -> master) HEAD@{0}: reset: moving to fd8ca8b
+54ff8b7 HEAD@{1}: reset: moving to HEAD
+54ff8b7 HEAD@{2}: commit: texto3
+0fb0619 HEAD@{3}: commit: texto2
+fd8ca8b (HEAD -> master) HEAD@{4}: commit (initial): texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ ls
+texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ nano notepad texto2
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ start notepad texto2
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ start notepad texto3
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git add .
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git commit -m 'texto2y3'
+[master d905565] texto2y3
+ 2 files changed, 2 insertions(+)
+ create mode 100644 texto2.txt
+ create mode 100644 texto3.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git log --oneline
+d905565 (HEAD -> master) texto2y3
+fd8ca8b texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git reflog
+d905565 (HEAD -> master) HEAD@{0}: commit: texto2y3
+fd8ca8b HEAD@{1}: reset: moving to fd8ca8b
+54ff8b7 HEAD@{2}: reset: moving to HEAD
+54ff8b7 HEAD@{3}: commit: texto3
+0fb0619 HEAD@{4}: commit: texto2
+fd8ca8b HEAD@{5}: commit (initial): texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git reflog
+d905565 (HEAD -> master) HEAD@{0}: commit: texto2y3
+fd8ca8b HEAD@{1}: reset: moving to fd8ca8b
+54ff8b7 HEAD@{2}: reset: moving to HEAD
+54ff8b7 HEAD@{3}: commit: texto3
+0fb0619 HEAD@{4}: commit: texto2
+fd8ca8b HEAD@{5}: commit (initial): texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ ls
+texto1  texto2.txt  texto3.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git log --oneline
+d905565 (HEAD -> master) texto2y3
+fd8ca8b texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git revert d905565
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/revres/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file C:/revres/.git/COMMIT_EDITMSG to Unix format...
+[master f78d6ff] Revert "texto2y3"
+ 2 files changed, 2 deletions(-)
+ delete mode 100644 texto2.txt
+ delete mode 100644 texto3.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git log --oneline
+f78d6ff (HEAD -> master) Revert "texto2y3"
+d905565 texto2y3
+fd8ca8b texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ ls
+texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git revert f78d6ff
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/revres/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file C:/revres/.git/COMMIT_EDITMSG to Unix format...
+[master 54c2269] Reapply "texto2y3"
+ 2 files changed, 2 insertions(+)
+ create mode 100644 texto2.txt
+ create mode 100644 texto3.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ ls
+texto1  texto2.txt  texto3.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git log --oneline
+54c2269 (HEAD -> master) Reapply "texto2y3"
+f78d6ff Revert "texto2y3"
+d905565 texto2y3
+fd8ca8b texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git reflog
+54c2269 (HEAD -> master) HEAD@{0}: revert: Reapply "texto2y3"
+f78d6ff HEAD@{1}: revert: Revert "texto2y3"
+d905565 HEAD@{2}: commit: texto2y3
+fd8ca8b HEAD@{3}: reset: moving to fd8ca8b
+54ff8b7 HEAD@{4}: reset: moving to HEAD
+54ff8b7 HEAD@{5}: commit: texto3
+0fb0619 HEAD@{6}: commit: texto2
+fd8ca8b HEAD@{7}: commit (initial): texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git clone https://github.com/PastorizaAmado/centrodedia3idade.git
+Cloning into 'centrodedia3idade'...
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 27 (delta 11), reused 25 (delta 9), pack-reused 0 (from 0)
+Receiving objects: 100% (27/27), 9.72 KiB | 1.62 MiB/s, done.
+Resolving deltas: 100% (11/11), done.
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ ls -liah
+total 23K
+1970324836989753 drwxr-xr-x 1 Dpastoriza 197121  0 Nov 16 16:59 ./
+1407374883553285 drwxr-xr-x 1 Dpastoriza 197121  0 Nov 16 16:24 ../
+1407374883568510 drwxr-xr-x 1 Dpastoriza 197121  0 Nov 16 16:55 .git/
+2251799813700558 drwxr-xr-x 1 Dpastoriza 197121  0 Nov 16 16:59 centrodedia3idade/
+1125899906857888 -rw-r--r-- 1 Dpastoriza 197121 19 Nov 16 16:27 texto1
+1688849860279239 -rw-r--r-- 1 Dpastoriza 197121  6 Nov 16 16:54 texto2.txt
+1407374883568603 -rw-r--r-- 1 Dpastoriza 197121  6 Nov 16 16:54 texto3.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        centrodedia3idade/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git add .
+warning: adding embedded git repository: centrodedia3idade
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> centrodedia3idade
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached centrodedia3idade
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git commit -m 'Commit Clone'
+[master 97dddd1] Commit Clone
+ 1 file changed, 1 insertion(+)
+ create mode 160000 centrodedia3idade
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git remote add origin https://github.com/PastorizaAmado/revres.git
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git remote -v
+origin  https://github.com/PastorizaAmado/revres.git (fetch)
+origin  https://github.com/PastorizaAmado/revres.git (push)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git push -u origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/PastorizaAmado/revres.git/' not found
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git push -u origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (11/11), 953 bytes | 317.00 KiB/s, done.
+Total 11 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/PastorizaAmado/revres.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ ls -liah
+total 23K
+1970324836989753 drwxr-xr-x 1 Dpastoriza 197121  0 Nov 18 16:15 ./
+1407374883553285 drwxr-xr-x 1 Dpastoriza 197121  0 Nov 16 16:24 ../
+1407374883568510 drwxr-xr-x 1 Dpastoriza 197121  0 Nov 18 16:16 .git/
+2251799813700558 drwxr-xr-x 1 Dpastoriza 197121  0 Nov 16 16:59 centrodedia3idade/
+1407374883568544 -rw-r--r-- 1 Dpastoriza 197121 60 Nov 18 16:15 texto1
+1688849860279239 -rw-r--r-- 1 Dpastoriza 197121  6 Nov 16 16:54 texto2.txt
+1407374883568603 -rw-r--r-- 1 Dpastoriza 197121  6 Nov 16 16:54 texto3.txt
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ nano texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ nano texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git diff
+diff --git a/texto1 b/texto1
+index 2a3fe00..ff5d72f 100644
+--- a/texto1
++++ b/texto1
+@@ -1 +1 @@
+-Esto es el texto 1 
++Esto es el texto 1 y lo probamos con git pull
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   texto1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git commit -m "Commit git pull"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   texto1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git add .
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git commit -m "Commit git pull"
+[master 3403a0e] Commit git pull
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 956 bytes | 119.00 KiB/s, done.
+From https://github.com/PastorizaAmado/revres
+   f7a09f7..7f95b92  master     -> origin/master
+Updating f7a09f7..7f95b92
+Fast-forward
+ texto1 | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git log --online
+fatal: unrecognized argument: --online
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$ git log --oneline
+7f95b92 (HEAD -> master, origin/master, origin/HEAD) Cambio desde github
+f7a09f7 Commit git pull
+97dddd1 Commit Clone
+54c2269 Reapply "texto2y3"
+f78d6ff Revert "texto2y3"
+d905565 texto2y3
+fd8ca8b texto1
+
+Dpastoriza@Windows11BBDD MINGW64 /c/revres (master)
+$
